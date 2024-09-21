@@ -12,12 +12,10 @@ application {
     mainClass = "hexlet.code.App"
 }
 
+
 dependencies {
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     implementation("info.picocli:picocli:4.7.6")
-}
-
-tasks.test {
-    useJUnitPlatform()
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.18.0-rc1")
 }
